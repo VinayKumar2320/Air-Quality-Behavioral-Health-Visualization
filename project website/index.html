@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Quality & Behavioral Health Visualization Project</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #111827;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #2563eb, #3b82f6);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.3rem;
+      color: #dbeafe;
+      font-weight: 400;
+    }
+
+    /* Project & Team Section */
+    .project-details {
+      background-color: #fff;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-details:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-details h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1e293b;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 0.3rem;
+    }
+
+    .project-details p, .project-details ul {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-details ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Notebook Section */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem;
+    }
+
+    .notebook-container {
+      width: 100%;
+      max-width: 1200px;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .notebook-container:hover {
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+    }
+
+    iframe {
+      width: 100%;
+      height: 80vh;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111827;
+      color: #f4f4f5;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .project-details h2 {
+        font-size: 1.3rem;
+      }
+      iframe {
+        height: 70vh;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project-details {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Air Quality & Behavioral Health Visualization Project</h1>
+    <p>Interactive Observable Notebook Presentation</p>
+  </header>
+
+  <!-- Project & Team Details -->
+  <section class="project-details">
+    <h2>Course & Semester</h2>
+    <p>Course: CS-GY 6313 Information Visualization, Section B</p>
+    <p>Semester: Fall 2025</p>
+
+    <h2>Team</h2>
+    <p>Team Name: Team Visualizers</p>
+    <p>Team Members:</p>
+    <ul>
+      <li>Vinay Kumar (vk2771)</li>
+      <li>Antar Espadas Rodríguez (ae3144)</li>
+      <li>Dharun Ramesh (dr4075)</li>
+    </ul>
+  </section>
+
+  <!-- Main Notebook -->
+  <main>
+    <div class="notebook-container">
+      <iframe
+        src="https://observablehq.com/embed/a86f58c3e4293fa9?cell=*"
+        title="Observable Notebook">
+      </iframe>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Team Visualizers | CS-GY 6313 | New York University
+  </footer>
+</body>
+</html>
